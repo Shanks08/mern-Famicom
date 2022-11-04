@@ -1,0 +1,22 @@
+{
+  "name": "famicom_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend/server.js",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shanks08/Famicom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shanks08/Famicom/issues"
+  },
+  "homepage": "https://github.com/Shanks08/Famicom#readme"
+}

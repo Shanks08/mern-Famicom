@@ -1,0 +1,148 @@
+import bcrypt from 'bcrypt';
+
+const data = {
+  users: [
+    {
+      name: 'Admin',
+      email: 'admin@admin.com',
+      password: bcrypt.hashSync('123456', 10),
+      isAdmin: true,
+    },
+    {
+      name: 'Steve',
+      email: 'ste@gm.com',
+      password: bcrypt.hashSync('123456', 10),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      // _id: '1',
+      name: 'Denim Jacket',
+      slug: 'denim-jacket-1',
+      category: 'Jackets',
+      image: '/images/product-1.jpg',
+      price: 1000,
+      brand: 'Levis',
+      rating: 4.5,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '2',
+      name: 'White Shirt',
+      slug: 'white-Shirt-2',
+      category: 'Shirts',
+      image: '/images/product-2.jpg',
+      price: 700,
+      brand: 'Levis',
+      rating: 4,
+      numReviews: 10,
+      countInStock: 0,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '3',
+      name: 'Sweat Shirt',
+      slug: 'sweat-shirt-1',
+      category: 'Shirts',
+      image: '/images/product-3.jpg',
+      price: 1000,
+      brand: 'Levis',
+      rating: 4.7,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '4',
+      name: 'Denim Jeans',
+      slug: 'denim-jeans-1',
+      category: 'Pants',
+      image: '/images/product-4.jpg',
+      price: 3000,
+      brand: 'Nike',
+      rating: 4.2,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '5',
+      name: 'White Shawl',
+      slug: 'white-shawl-5',
+      category: 'Shawls',
+      image: '/images/product-5.jpg',
+      price: 1000,
+      brand: 'Adidas',
+      rating: 4.1,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '6',
+      name: 'White Shirt Slim',
+      slug: 'white-shirt-6',
+      category: 'Shirts',
+      image: '/images/product-6.jpg',
+      price: 1011,
+      brand: 'Levis',
+      rating: 4,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '7',
+      name: 'Orange Jacket',
+      slug: 'orange-jacket-7',
+      category: 'Jackets',
+      image: '/images/product-7.jpg',
+      price: 1099,
+      brand: 'Levis',
+      rating: 4,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '8',
+      name: 'Designer Jacket',
+      slug: 'designer-jacket-8',
+      category: 'Jackets',
+      image: '/images/product-8.jpg',
+      price: 1078,
+      brand: 'Levis',
+      rating: 4,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+    {
+      // _id: '9',
+      name: 'Hoodie',
+      slug: 'hoodie-9',
+      category: 'Hoodies',
+      image: '/images/product-9.jpg',
+      price: 1034,
+      brand: 'Levis',
+      rating: 4,
+      numReviews: 10,
+      countInStock: 5,
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusantium molestias. Voluptatem pariatur autem temporibus. Consectetur illo ullam voluptates! Porro!',
+    },
+  ],
+};
+
+export default data;

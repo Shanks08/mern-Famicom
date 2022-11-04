@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-container {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.btn-primary {
+  background-color: #40b3a2;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #7ec3b0;
+  color: #000;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+
+.products img {
+  width: 100%;
+  height: 25rem;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.rating span {
+  color: #40b3a2;
+}
+
+.rating .num-reviews {
+  color: #000;
+  font-weight: 400px;
+}
+
+.product-name-homescreen {
+  text-decoration: none;
+  list-style: none;
+  color: #404040;
+}
+
+.product-price-homescreen {
+  text-decoration: none;
+  list-style: none;
+  color: #404040;
+  font-size: 1.3rem;
+}
+
+.navbar {
+  background-color: #5cdb95;
+}
+
+.img-large {
+  max-width: 100%;
+  max-height: 50rem;
+}
+
+.img-thumbnail {
+  height: 80px;
+}
+
+.cart-item-button {
+  background-color: #fff;
+  border: none;
+  color: #40b3a2;
+  opacity: 1;
+}
+
+.cart-item-button:hover {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  opacity: 1;
+}
+
+.cart-item-button:disabled {
+  background-color: #fff;
+  color: #40b3a2;
+  opacity: 0.7;
+}
+
+.cart-item-button:active {
+  border: none !important;
+  background-color: #fff !important;
+}
+
+.small-container {
+  max-width: 600px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #40b3a2;
+  color: #248274;
+  font-weight: bold;
+}
+
+.form-check-input:checked {
+  background-color: #40b3a2;
+}
+
+@media screen and (max-width: 573px) {
+  .homescreen-product-col {
+    max-width: 20rem;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
