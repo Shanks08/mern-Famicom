@@ -121,7 +121,7 @@ export default function OrderScreen() {
           type: 'resetOptions',
           value: {
             'client-id': clientId,
-            currency: 'USD',
+            currency: 'INR',
           },
         });
         paypalDispatch({ type: 'setLoadingStatus', value: 'pending' });
@@ -129,6 +129,8 @@ export default function OrderScreen() {
       loadPaypalScript();
     }
   }, [order, userInfo, orderId, navigate, paypalDispatch]);
+
+  //? RETURN START
   return loading ? (
     <LoadingBox></LoadingBox>
   ) : error ? (
